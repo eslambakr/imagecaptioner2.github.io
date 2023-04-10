@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XB3PR2Y1TQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XB3PR2Y1TQ');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ImageCaptioner&sup2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta property="og:site_name" content="ImageCaptioner&sup2" />
+    <meta property="og:type" content="video.other" />
+    <meta property="og:title" content="ImageCaptioner&sup2: Image Captioner for Image Captioning Bias Amplification Assessment" />
+    <meta property="og:description" content="We propose a new bias metric, termed, ImageCaptioner 2, which can be employed to measure any source of bias in image captioning modules., 2022." />
+    <meta property="og:url" content="https://PaperWebsite.github.io/" />
+    <meta property="og:image" content="" />
+
+
+    <!-- <meta name="twitter:site" content="" /> -->
+
+    <script src="assets/js/video_comparison.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+    </div>
+
+        <div class="container" style="max-width: auto;">
+            <h1 class="text-center"><b>ImageCaptioner&sup2</b>: Image Captioner for Image Captioning Bias Amplification Assessment</h1>
+        <div class="container" style="max-width: auto;text-align: center;">
+
+            <div class="row authors">
+                <div class="col-sm-3">
+                    <h5 class="text-center"><a class="text-center" >Eslam Mohamed Bakr</a></h5>
+                    <h6 class="text-center">KAUST</h6>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="text-center"><a>Pengzhan Sun</a></h5>
+                    <h6 class="text-center">NUS</h6>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="text-center"><a class="text-center">Li Erran Li</a></h5>
+                    <h6 class="text-center">Amazon</h6>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="text-center"><a class="text-center">Mohamed Elhoseiny</a></h5>
+                    <h6 class="text-center">KAUST</h6>
+                </div>
+            </div>    
+        </div>
+        <!--
+        <div class="buttons" style="margin-bottom: 8px;text-align: center;">
+            <a class="btn btn-light border border-dark" role="button" href="https://arxiv.org/abs/2211.14241">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
+                </svg>Paper
+            </a>
+            <a class="btn btn-light border border-dark"  role="button" href="https://github.com/eslambakr/LAR-Look-Around-and-Refer">
+                <svg tyle="width:24px;height:24px;margin-left:-12px;margin-right:12px" width="0px" height="24px" viewBox="0 0 375 531">
+                    <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "/>
+                </svg>
+                <i class="fa fa-github"></i> Github
+            </a>
+        -->
+        </div>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="container" style="max-width: 768px;">
+    <center>
+        <h2>Video</h2>
+     
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w3y6WAdDhMA" style="text-align:center;"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>       
+         </div>
+        </center>
+    </div>
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Abstract</h2>
+                <p>
+                    <!-- <strong> -->
+                        Most pre-trained learning systems are known to suffer from bias, which typically emerges from data, the model, or both. Measuring and quantifying bias and its sources is a challenging task and has been extensively studied in image captioning. Despite the significant effort in this direction, we observed that existing metrics lack consistency in the inclusion of the visual signal. In this paper, we introduce a new bias assessment metric, dubbed ImageCaptioner 2 , for image captioning. Instead of measuring the absolute bias in the model or the data, ImageCaptioner 2 pay more attention to the bias introduced by the model w.r.t the data bias termed bias amplification. Unlike the existing methods, which only evaluate the image captioning algorithms based on the gener- ated captions only, ImageCaptioner 2 incorporates the image while measuring the bias. We verify the effectiveness of our ImageCaptioner 2 metric across 11 different image captioning techniques on three different datasets, i.e., MS-COCO caption dataset, Artemis V1, and Artemis V2, and on three different protected attributes, i.e., gender, race, and emotions. In addition, our metric show a significant robustness against LIC.
+                    <!-- </strong> -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+            <h2>How does it work?</h2>
+                <div class="highlight-clean" style="padding-bottom: 10px;text-align: center;">
+                    <img src="img/teaser_fig.jpg" alt="LAR" height="100%" width="100%"/>        
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <div class="highlight-clean" style="padding-bottom: 10px;text-align: center;">
+                    <img src="img/intro_Img.png" alt="LAR" height="30%" width="30%"/>  -->
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+            <h2>Human Evaluation is tricky </h2>
+                <div class="highlight-clean" style="padding-bottom: 10px;text-align: center;">
+                    <img src="img/failure_human_eval.png" alt="ImageCaptioner&sup2" height="100%" width="100%"/>        
+                </div>
+                <div class="col-md-12">
+                    <p>
+                        <!-- <strong> -->
+                            To fairly compare the different bias evaluation metrics, a human evaluation has to be conducted. However, it is hard design such an evaluation for the bias. For instance, in the figure above, one possible solution is to ask the annotatoers to try to guess the gender given the AI generated captions. Unfortunately, the formulation will be not accurate enough as humans already biased, therefore this approach could lead to human bias measurement instead of metric evaluation. To tackle this critical point, we introduce AnonymousBench.
+                        <!-- </strong> -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+            <h2>AnonymousBench </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/AnonymousBench1.gif" alt="ImageCaptioner&sup2" height="100%" width="100%"/>        
+              </div>
+              <div class="col">
+                <img src="img/AnonymousBench2.gif" alt="ImageCaptioner&sup2" height="100%" width="100%"/>        
+              </div>
+              <div class="col">
+                <img src="img/AnonymousBench3.gif" alt="ImageCaptioner&sup2" height="100%" width="100%"/>        
+              </div>
+              <div class="col">
+                <img src="img/AnonymousBench4.gif" alt="ImageCaptioner&sup2" height="100%" width="100%"/>        
+              </div>
+        </div>
+        <div class="col-md-12">
+                <p>
+                    <!-- <strong> -->
+                            To prove the effectiveness of our method, we further propose AnonymousBench; gender and race agnostic benchmark that consists of 1k anonymous images.
+                            First, we ask annotators to write 500 text prompts that describe various scenes with anonymous people. Secondly, Stable-Diffusion V2.1 is utilized to generate ten images per prompt resulting in 5k images. 
+                            Then, annotators are asked to filter out the non-agnostic images based on two simple questions; 1) Do you recognize a human in the scene? 
+                            2) If yes, Are the gender and race anonymous?
+                            Finally, the filtered images, 1k images, are fed to each model, which we assess, to generate the corresponding captions.
+                            We expect that the best model would instead predict gender-neutral words, e.g., person instead of man or woman, as the gender is not apparent.
+                            Therefore, the GT score is defined based on whether a human can guess the gender from the generated captions and averaged across the whole data.
+                            Amazon Mechanical Turk (AMT) is utilized to filter the images and to conduct a human evaluation of the generated captions.
+                            The below table demonstrates LIC, ImageCaptioner&sup2, and GT results on our proposed benchmark; AnonymousBench.
+                            The Pearson correlation is employed to measure the alignment between the metrics and GT.
+                            As shown in the below figure, our metric is more aligned with the GT, where the correlation scores are 80% and 54% for our metric and LIC, respectively. 
+                    <!-- </strong> -->
+                </p>
+        </div>
+        <div class="row">
+                <div class="col">
+                    <img src="img/anonymousbench_results_table.png" alt="ImageCaptioner&sup2" height="100%" width="100%"/>        
+                  </div>
+                  <div class="col">
+                    <img src="img/anonymous_bench_results.png" alt="ImageCaptioner&sup2" height="100%" width="100%"/>        
+                  </div>
+            </div>
+    </div>
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+            <h2> Consistency: The Judge Model Invariant </h2>
+            </div>
+        </div>
+        <div class="row">
+                <img src="img/consistency_fig.png" alt="ImageCaptioner&sup2" height="100%" width="100%"/>
+        </div>
+        <div class="col-md-12">
+                <p>
+                    <!-- <strong> -->
+                        As discussed in the main paper, learnable metrics utilize additional language classifiers to measure the bias. Accordingly, it
+                        may suffer from inconsistency when the classifier is changed. For instance, to measure the inconsistency, LIC relies on
+                        the agreement between different classifiers on the best and the worst models in terms of bias score. Following such a naive
+                        approach may lead to an inadequate conclusion. Therefore, we introduce three scores to dissect the inconsistency, i.e., conflict
+                        score, correlation score, and Longest Common Sub-sequence (LCS).
+                    <!-- </strong> -->
+                </p>
+        </div>
+    </div>
+
+    <!--
+    <hr class="divider" />
+    <div class="container" style="max-width: 768px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Citation</h2>
+                <code>
+                    @inproceedings{bakrlook,
+                    title={Look Around and Refer: 2D Synthetic Semantics Knowledge Distillation for 3D Visual Grounding},
+                    author={Bakr, Eslam Mohamed and Alsaedy, Yasmeen Youssef and Elhoseiny, Mohamed},
+                    booktitle={Advances in Neural Information Processing Systems}
+                }</code>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <script src="https://polyfill.io/v3/polyfill.js?features=IntersectionObserver"></script>
+    <script src="/assets/js/yall.js"></script>
+    <script>
+        yall(
+            {
+                observeChanges: true
+            }
+        );
+    </script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/js/webflow.fd002feec.js"></script>
+    <!-- Import the component -->
+</body>
+
+<footer>
+    
+</footer>
+</html>
